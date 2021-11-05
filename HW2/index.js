@@ -7,7 +7,6 @@ while(isFibonacci) {
         alert('Please, enter valid number');
         continue;
     }
-    console.log(n)
 
     alert (`n is ${Fibonacci(Number(n))}`)
     isFibonacci = confirm("Do you want to continue Fibonacci?");
@@ -28,7 +27,7 @@ function Fibonacci (n, first = 0, second = 1) {
             return Fibonacci(n + 2) - Fibonacci (n + 1);
         }
         default: {
-            console.log('error')
+            return('error')
         }
     }
 }
