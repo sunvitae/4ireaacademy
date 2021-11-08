@@ -3,7 +3,7 @@ let isFibonacci = true;
 while(isFibonacci) {
     const n = prompt('Please, enter n', 3);
 
-    if(!(n.trim() && isFinite(n) && Number.isInteger(n))){
+    if(!(n.trim() && isFinite(n) && Number.isInteger(Number(n)))){
         alert('Please, enter valid number');
         continue;
     }
